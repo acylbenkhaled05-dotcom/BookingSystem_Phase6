@@ -36,11 +36,6 @@ sequenceDiagram
             F-->>U: Show success message
         end
     end
-
-
-## 2️⃣ READ – Resource (Sequence Diagram)
-
-```mermaid
 sequenceDiagram
     participant U as User (Browser)
     participant F as Frontend (resources.js)
@@ -67,10 +62,6 @@ sequenceDiagram
         F-->>U: Display resource list
     end
 
-
-## 3️⃣ UPDATE – Resource (Sequence Diagram)
-
-```mermaid
 sequenceDiagram
     participant U as User (Browser)
     participant F as Frontend (form.js and resources.js)
@@ -116,10 +107,6 @@ sequenceDiagram
         end
     end
 
-
-## 4️⃣ DELETE – Resource (Sequence Diagram)
-
-```mermaid
 sequenceDiagram
     participant U as User (Browser)
     participant F as Frontend (resources.js)
@@ -153,15 +140,3 @@ sequenceDiagram
             F-->>U: Display updated list
         end
     end
-
-
----
-
-## 📋 Endpoints Recap
-
-| Operation | Method | Endpoint | Success | Failure |
-|-----------|--------|----------|--------|-------|
-| **CREATE** | POST | `/api/resources` | 201 Created | 400 / 409 |
-| **READ** | GET | `/api/resources` | 200 OK | 500 |
-| **UPDATE** | PUT | `/api/resources/:id` | 200 OK | 400 / 404 |
-| **DELETE** | DELETE | `/api/resources/:id` | 204 No Content | 404 |
