@@ -36,6 +36,11 @@ sequenceDiagram
             F-->>U: Show success message
         end
     end
+```
+
+## 2️⃣ READ – Resource (Sequence Diagram)
+
+```mermaid
 sequenceDiagram
     participant U as User (Browser)
     participant F as Frontend (resources.js)
@@ -61,7 +66,11 @@ sequenceDiagram
         B-->>F: 200 OK + resources[]
         F-->>U: Display resource list
     end
+```
 
+## 3️⃣ UPDATE – Resource (Sequence Diagram)
+
+```mermaid
 sequenceDiagram
     participant U as User (Browser)
     participant F as Frontend (form.js and resources.js)
@@ -106,7 +115,11 @@ sequenceDiagram
             end
         end
     end
+```
 
+## 4️⃣ DELETE – Resource (Sequence Diagram)
+
+```mermaid
 sequenceDiagram
     participant U as User (Browser)
     participant F as Frontend (resources.js)
@@ -140,3 +153,4 @@ sequenceDiagram
             F-->>U: Display updated list
         end
     end
+```
